@@ -13,7 +13,7 @@ export function formatDate(date: Date, format: string = "YYYY-MM-DD"): string {
         .replace("HH", hours)
         .replace("mm", minutes)
         .replace("ss", seconds);
-}
+} //Formatting the day to given format string 
 
 export function timeAgo(date: Date): string {
     const now = new Date().getTime();
