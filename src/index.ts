@@ -35,13 +35,13 @@ export function timeAgo(date: Date): string {
 export function isToday(date: Date): boolean {
     const today = new Date();
     return date.toDateString() === today.toDateString();
-}
+} // checks wheather the given date is today's or not 
 
 export function isYesterday(date: Date): boolean {
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     return date.toDateString() === yesterday.toDateString();
-}
+} // Checks the date and return true is its yesterday 
 
 export function daysBetween(date1: Date, date2: Date): number {
     const diff = Math.abs(date2.getTime() - date1.getTime());
