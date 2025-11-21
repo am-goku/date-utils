@@ -72,4 +72,4 @@ export function getWeekday(date: Date): string {
 
 export function toISO(date: Date): string {
     return date.toISOString();
-}
+} // converting given date to ISO date string
