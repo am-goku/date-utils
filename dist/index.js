@@ -24,7 +24,7 @@ function formatDate(date, format = "YYYY-MM-DD") {
         .replace("HH", hours)
         .replace("mm", minutes)
         .replace("ss", seconds);
-}
+} //Formatting the day to given format string 
 function timeAgo(date) {
     const now = new Date().getTime();
     const diff = now - date.getTime();
@@ -43,12 +43,12 @@ function timeAgo(date) {
 function isToday(date) {
     const today = new Date();
     return date.toDateString() === today.toDateString();
-}
+} // checks wheather the given date is today's or not 
 function isYesterday(date) {
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     return date.toDateString() === yesterday.toDateString();
-}
+} // Checks the date and return true is its yesterday 
 function daysBetween(date1, date2) {
     const diff = Math.abs(date2.getTime() - date1.getTime());
     return Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -73,4 +73,4 @@ function getWeekday(date) {
 }
 function toISO(date) {
     return date.toISOString();
-}
+} // converting given date to ISO date string
