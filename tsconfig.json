@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
-    "module": "CommonJS",
-    "declaration": true,
+    "target": "ES2020",
+    "module": "ES2020",
     "outDir": "dist",
+    "declaration": true,
+    "moduleResolution": "Node",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": ["vitest/globals"]
   },
-  "include": ["src"]
+  "include": ["src", "tests"]
 }
